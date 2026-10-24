@@ -4,6 +4,8 @@ name: CI
 on:
   pull_request:
     branches: [main]
+permissions:
+  contents: read
 jobs:
   # Job 1: revisa el estilo del código (lint) y ejecuta los tests.
   build-and-test:
